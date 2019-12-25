@@ -17,3 +17,9 @@ application.properties
 ----------------------
 added prefix key with value as "/pages/"---Because jsp pages are added to a pages folder
 added suffix keay with value as ".jsp"---Using JSP as view
+
+JSP Engine
+------------
+By default Spring Boot won't support JSP files, It will simply download home.jsp file.
+Jasper dependency is requried to add under POM.xml, so that the data will be displayed instead of downloading .jsp file.
+Jasper is Tomcat's JSP Engine. Jasper parses JSP files to compile them into Java code as servlets.
